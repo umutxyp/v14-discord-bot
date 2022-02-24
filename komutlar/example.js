@@ -6,7 +6,6 @@ exports.run = async (client, message, args) => {
     .setTitle("Komut Başlığı")
     .setDescription("**https://discord.gg/6XGqdgE**")
     .setColor("BLUE")
-    .setFooter(`Kullanan ${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
     return message.channel.send({embeds : [embed]});
 
