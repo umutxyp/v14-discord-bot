@@ -10,9 +10,7 @@
   "author": "Umut Bayraktar",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^13.6.0",
-    "fs": "^0.0.2",
-    "@discordjs/collection": "^0.5.0"
+    "discord.js": "^13.6.0"
   },
   "engines": {
     "node": "16.x"
