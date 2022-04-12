@@ -1,7 +1,6 @@
 const { Client, Message, MessageEmbed, Collection } = require("discord.js");
 const fs = require("fs");
 const config = require("./config.json");
-const prefix = config.prefix;
 const token = config.token;
 
 
@@ -12,10 +11,6 @@ const client = new Client({
   restTimeOffset: 0,
   restWsBridgetimeout: 100,
   shards: "auto",
-  allowedMentions: {
-    parse: ["roles", "users", "everyone"],
-    repliedUser: true,
-  },
   partials: ["MESSAGE", "CHANNEL", "REACTION"],
   intents: 32767,
 });
@@ -26,12 +21,12 @@ require("./events/ready.js")
 
 client.commands = new Collection();
 client.aliases = new Collection();
-fs.readdir("./komutlar/", (err, files) => {
+fs.readdir("./commands/", (err, files) => {
   if (err) console.error(err);
-  console.log(`Toplamda ${files.length} Komut Var!`);
+  console.log(`${files.length} Total Command!`);
   files.forEach(f => {
-    let props = require(`./komutlar/${f}`);
-    console.log(`${props.help.name} İsimli Komut Aktif!`);
+    let props = require(`./commands/${f}`);
+    console.log(`${props.help.name} Named Command Online!`);
     client.commands.set(props.help.name, props);
     props.conf.aliases.forEach(alias => {
       client.aliases.set(alias, props.help.name);
