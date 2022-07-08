@@ -7,7 +7,7 @@ client.user.setActivity(`Umut Bayraktar ♥ Code Share`)
 
 client.commands = new Collection();
 client.aliases = new Collection();
-fs.readdir("../commands/", (err, files) => {
+fs.readdir("./commands/", (err, files) => {
 if (err) console.error(err);
 console.log(`${files.length} Total Command!`);
 files.forEach(f => {
