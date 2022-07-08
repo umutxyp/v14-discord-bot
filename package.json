@@ -1,7 +1,7 @@
 {
   "name": "discordJS-V13",
   "version": "4.0.0",
-  "description": "Umut Bayraktar Discord.js v13 Uyumlu Komutsuz Bot Altyapısı!",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
