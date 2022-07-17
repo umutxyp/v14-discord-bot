@@ -1,5 +1,6 @@
 const client = require("../index");
 const { Collection } = require("discord.js")
+const fs = require("fs")
 
 client.on("ready", () => {
 console.log(`${client.user.tag} Bot Online!`)
