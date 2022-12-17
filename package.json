@@ -1,18 +1,19 @@
 {
-  "name": "discordjs-13",
-  "version": "5.0.0",
-  "description": "Discord bot draft that does not contain ready-made commands, compatible with discord.js v13. Create your own discord bot with this command handler.",
+  "name": "discordjs-slash-command-bot-v14",
+  "version": "1.0.0",
+  "description": "discordjs-slash-command-bot-v14",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
   "author": "Umut Bayraktar",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "discord.js": "^13.6.0"
+    "discord.js": "^14.7.1",
+    "fs": "^0.0.1-security"
   },
   "engines": {
-    "node": "16.x"
+    "node": "17.x"
   }
 }
