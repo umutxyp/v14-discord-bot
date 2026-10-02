@@ -1,19 +1,41 @@
 {
-  "name": "discordjs-slash-command-bot-v14",
-  "version": "1.0.0",
-  "description": "discordjs-slash-command-bot-v14",
-  "main": "index.js",
+  "name": "slash-command-bot",
+  "version": "2.0.0",
+  "description": "Sharded Discord bot template for discord.js v14 with unified slash + prefix commands and Components V2.",
+  "main": "src/index.js",
+  "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js",
+    "dev": "node src/deploy.js && node src/bot.js",
+    "deploy": "node src/deploy.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
-  "keywords": [],
+  "keywords": [
+    "discord",
+    "discord.js",
+    "discord-bot",
+    "slash-commands",
+    "prefix-commands",
+    "components-v2",
+    "sharding"
+  ],
   "author": "Umut Bayraktar",
   "license": "MIT",
-  "dependencies": {
-    "discord.js": "^14.7.1",
-    "fs": "^0.0.1-security"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umutxyp/slash-command-bot.git"
   },
   "engines": {
-    "node": "17.x"
+    "node": ">=20.12.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.0.0"
   }
 }
