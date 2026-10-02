@@ -154,14 +154,6 @@ module.exports = {
 
 ---
 
-## 🇹🇷 Türkçe kısa kurulum
-
-1. [Discord Developer Portal](https://discord.com/developers/applications) üzerinden bot oluşturun. Prefix komutları kullanacaksanız **Bot** sekmesinden **Message Content Intent** seçeneğini açın.
-2. `npm install` komutunu çalıştırın, `.env.example` dosyasını `.env` olarak kopyalayın ve `DISCORD_TOKEN` değerine token'ınızı yazın.
-3. `npm start` ile başlatın. Shard sayısı otomatik belirlenir ve slash komutları otomatik yüklenir.
-4. Yeni komut eklemek için `src/commands/<kategori>/komut.js` dosyası oluşturun. Aynı dosya hem `/komut` hem `!komut` olarak çalışır.
-5. Yalnızca slash komut kullanmak isterseniz `.env` içinde `PREFIX_ENABLED=false` yapın. Bu durumda Message Content intent'i gerekmez.
-
 ## 📜 License
 
 MIT © [Umut Bayraktar](https://github.com/umutxyp)
